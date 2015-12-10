@@ -20,3 +20,5 @@ Strange!
 
 #Changes made by bioinforME
 HEllo~ I am here!
+#changes made by bioninforME from command line
+Another change!
