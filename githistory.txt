@@ -1,0 +1,258 @@
+    1  wget http://bio-swc-bne.github.io/shell-novice/shell-novice-data.zip
+    2  curl -0 http://bio-swc-bne.github.io/shell-novice/shell-novice-data.zip
+    3  curl -O 
+    4  curl -O http:/swcarpentry-github.io/shell-novice/shell-novice-data.zip
+    5  curl -O http:/swcarpentry-github.io/shell-novice/shell-novice-data.zip
+    6  ls
+    7  host www.google.com
+    8  nslookup
+    9  ls
+   10  ls -la
+   11  id
+   12  ip a
+   13  ip r
+   14  curl -O http:/swcarpentry-github.io/shell-novice/shell-novice-data.zip
+   15  ping software-carpentry.org
+   16  host www.google.com
+   17  sudo ping software-carpentry.org
+   18  id
+   19  ping 8.8.8.8
+   20  ls
+   21  wget http://swcarpentry.github.io/shell-novice/shell-novice-data.zip
+   22  ls
+   23  unzip shell-novice-data.zip 
+   24  ls
+   25  pwd
+   26  cd /home/researcher
+   27  ls
+   28  cd data
+   29  ls
+   30  cd Users
+   31  ls
+   32  cd nelle
+   33  ls
+   34  ls -F
+   35  ls -a
+   36  ls
+   37  ls data
+   38  ls -F data
+   39  cd north-pacific-gyre/
+   40  ls
+   41  ls 2012-07-03/
+   42  cd 2012-07-03/
+   43  ls *.txt
+   44  ls *g
+   45  cd~
+   46  cd ~
+   47  pwd
+   48  mkdir test
+   49  cd test
+   50  nano
+   51  ls
+   52  nano three.txt
+   53  ls
+   54  rm Textfile
+   55  cd ..
+   56  pwd
+   57  rmdir test
+   58  rm -r test
+   59  cd test
+   60  touch draft.txt
+   61  touch smple.txt
+   62  mkdir test
+   63  mv draft.txt test/
+   64  ls
+   65  cp smple.txt test/
+   66  ls
+   67  ls test
+   68  mv smple.txt sample.txt
+   69  ls
+   70  mv sampe.txt test/
+   71  mv sample.txt test/
+   72  pwd
+   73  ls
+   74  cd data
+   75  ls
+   76  cd Users/nelle
+   77  ls
+   78  setwd 
+   79  wd
+   80  ls ml
+   81  ls molecules/
+   82  cd molecules/
+   83  wc *.pdb
+   84  wc -l *.pdb
+   85  wc -l *.pdb > lengths.txt
+   86  ls
+   87  ca lengths.txt
+   88  cat lengths.txt
+   89  nano hello.txt
+   90  ls
+   91  cat hello.txt
+   92  sort lengths.txt
+   93  sort hello.txt
+   94  sort -n lengths.txt
+   95  sort -n lengths.txt > sorted-lengths.txt
+   96  ls
+   97  nano edit hello.txt
+   98  cat hello
+   99  cat hello.txt
+  100  head sorted-lengths.txt 
+  101  sort hello.txt
+  102  head hello.txt
+  103  sort hello.txt > sorted-hello.txt
+  104  ls
+  105  cat sorted-hello.txt 
+  106  head -1 sorted-lengths.txt 
+  107  head -4 sorted-lengths.txt 
+  108  ls
+  109  sort -n lengths.txt | head -1
+  110  wc -l *.pdb | sort -n 
+  111  wc -l *.pdb | sort -n | head -1
+  112  cd ..
+  113  ls
+  114  cd north-pacific-gyre/
+  115  cd data
+  116  ls
+  117  cd 2012-07-03/
+  118  ls
+  119  wc -l *.txt | sort -n 
+  120  wc -l *.txt | sort -n | head -5
+  121  wc -l *.txt | sort -n | tail  -5
+  122  ls *Z.txt
+  123  wc -l
+  124  wc -1 < nat.txt
+  125  touch nat.txt
+  126  wc -1 < nat.txt
+  127  wc -l < nat.txt
+  128  wc -l nat.txt
+  129  wc -l NENE02043B
+  130  wc -l NENE02043B.txt
+  131  wc -l < NENE02043B.txt
+  132  wc -w < NENE02043B.txt
+  133  wc -c < NENE02043B.txt
+  134  wc -c  NENE02043B.txt
+  135  mkdir test
+  136  cd test
+  137  nano test.txt
+  138  echo hello
+  139  echo hello > hello
+  140  ls
+  141  echo hello >> done.txt
+  142  ls
+  143  cat done.txt
+  144  cat test.txt
+  145  echo hello >> test.txt
+  146  cat test.txt
+  147  cd..
+  148  cd ..
+  149  cd ../..
+  150  ls
+  151  cd north-pacific-gyre/
+  152  ls
+  153  cd 2012-07-03/
+  154  cd test
+  155  echo potato < test.txt
+  156  cat test.txt
+  157  echo potato > test.txt
+  158  cat test.txt
+  159  echo salad >> text.txt
+  160  cat text.txt
+  161  ls
+  162  echo salad >> test.txt
+  163  cat test.txt
+  164  rm text.txt
+  165  ls
+  166  cd ..
+  167  cd creatures/
+  168  ls
+  169  cp *.dat original*.dat
+  170  mkdir originals | cp *.dat originals/
+  171  ls
+  172  originals
+  173  cd originals/
+  174  ls
+  175  cd ..
+  176  for filename in basilisk.dat unicorn.dat ; do head -3 $filename; done
+  177  for filename in basilisk.dat unicorn.dat ; do -l head -3 $filename; done
+  178  for filename in basilisk.dat unicorn.dat ; do echo $filename; head -3 $filename; done
+  179  for filename in *.dat ; do echo $filename; head -3 $filename; done
+  180  for filename in *.dat ; do echo $filename; wc -l $filename; done
+  181  for filename in *.dat ; do echo $filename; cat $filename; done
+  182  for filename in *.dat ; do echo $filename; cat -l $filename; done
+  183  for filename in *.dat ; do echo $filename; wc -l  $filename; done
+  184  for filename in *.dat ; do echo $filename; print 80-100 $filename; done
+  185  for filename in *.dat ; do echo $filename; wc -l $filename; done
+  186  for filename in *.dat ; do echo $filename; head -100 $filename | tail -20; done
+  187  for filename in *.dat; do cp $filename original-$filename; done
+  188  ls
+  189  mv *original originals/
+  190  mv original*.dat originals/
+  191  ls
+  192  cd originals
+  193  ls
+  194  cd ..
+  195  for datafile *.dat
+  196  for datafile in *.dat; do ls *.dat; done
+  197  do
+  198  for datafile in *.dat; do ls $datafile; done
+  199  for datafile in *.dat; do echo $datafile; ls $datafile; done
+  200  ls
+  201  for datafile in *.dat; do echo $datafile; ls *.dat; done
+  202  touch test.dat
+  203  for datafile in *.dat; do echo $datafile; ls *.dat; done
+  204  history
+  205  history | tail -100 > comd_history.txt
+  206  ls
+  207  cat comd_history.txt 
+  208  nano backuporiginal.sh
+  209  cat backuporiginal.sh 
+  210  bash backuporiginal.sh 
+  211  nano backuporiginal.sh 
+  212  bash backuporiginal.sh 
+  213  ls
+  214  cat backuporiginal.sh 
+  215  wget https://github.com/resbaz/r-novice-gapminder-files/archive/master.zip
+  216  ls
+  217  unzip master.zip
+  218  ls
+  219  cd r-novice-gapminder-files-master/
+  220  ls
+  221  data
+  222  cd data
+  223  ls
+  224  cp gapminder-FiveYearData.csv home/R TRI
+  225  cp gapminder-FiveYearData.csv home/data/
+  226  cp gapminder-FiveYearData.csv home/data
+  227  ls
+  228  ls pwd
+  229  pwd
+  230  ls
+  231  cd
+  232  ls
+  233  mv data/Users/nelle/creatures/r-novice-gapminder-files-master/data/gapminder-FiveYearData.csv R\ TRI/data/
+  234  pwd
+  235  $ git config --global user.name "Vlad Dracula"
+  236  $ git config --global user.email "vlad@tran.sylvan.ia"
+  237  $ git config --global color.ui "auto"
+  238  git config --global user.name "nataly"
+  239  $ git config --global user.name "Vlad Dracula"
+  240  $ git config --global user.email "vlad@tran.sylvan.ia"
+  241  $ git config --global color.ui "auto"
+  242  git config --global user.email "something@email.com"
+  243  git config --global color.ui "auto"
+  244  git config --global user.email "nataly.stylianou"
+  245  git config --global color.ui "auto"
+  246  git config --global core.editor "nano"
+  247  git config --global core.editor "nano -w"
+  248  git config --list
+  249  git config --global user.email "nataly.stylianou@qut.edu.au"
+  250  git config --list
+  251  mkdir GitHubRepository
+  252  ls
+  253  git
+  254  cd GitHubRepository/
+  255  git init
+  256  ls
+  257  ls -a
+  258  history > githistory.txt
